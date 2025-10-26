@@ -1,0 +1,39 @@
+diff --git a/src/index.html b/src/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..82e7bdf230bdc72810e181d521a5d37a116c2d7f
+--- /dev/null
++++ b/src/index.html
+@@ -0,0 +1,33 @@
++<!DOCTYPE html>
++<html lang="pt-BR">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Pixel Runner</title>
++    <link rel="stylesheet" href="style.css" />
++  </head>
++  <body>
++    <main class="layout">
++      <section class="info">
++        <h1>Pixel Runner</h1>
++        <p>Use <strong>espaço</strong> ou <strong>toque</strong> para pular. Evite os obstáculos e acumule pontos!</p>
++        <button id="start-btn" type="button">Começar</button>
++        <div class="hud">
++          <p>Pontuação: <span id="score">0</span></p>
++          <p>Recorde: <span id="high-score">0</span></p>
++        </div>
++        <details>
++          <summary>Como funciona</summary>
++          <ul>
++            <li>Estética 8-bit com resolução reduzida e sprites em blocos.</li>
++            <li>Gravidade constante e impulso único ao pular.</li>
++            <li>Obstáculos gerados proceduralmente com dificuldade progressiva.</li>
++            <li>Roda direto no navegador, sem dependências externas.</li>
++          </ul>
++        </details>
++      </section>
++      <canvas id="game" width="256" height="144" role="img" aria-label="Cena do jogo Pixel Runner"></canvas>
++    </main>
++    <script src="game.js"></script>
++  </body>
++</html>
