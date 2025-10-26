@@ -1,46 +1,46 @@
-+<!DOCTYPE html>
-+<html lang="pt-BR">
-+  <head>
-+    <meta charset="UTF-8" />
-+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-+    <title>Duck Dash 8-bit</title>
-+    <link rel="stylesheet" href="style.css" />
-+  </head>
-+  <body>
-+    <main class="layout">
-+      <section class="info-card">
-+        <header class="title-card">
-+          <p class="subtitle">8-bit flight</p>
-+          <h1>Duck Dash</h1>
-+        </header>
-+        <p class="tagline">Guie o pato azul de bico dourado através dos campos neon. Pule no momento certo e conquiste recordes!</p>
-+        <button id="start-btn" type="button">PRESS START</button>
-+        <div class="hud pixel-panel">
-+          <p><span class="label">Pontuação</span><span id="score" class="value">0</span></p>
-+          <p><span class="label">Recorde</span><span id="high-score" class="value">0</span></p>
-+        </div>
-+        <div class="tips pixel-panel">
-+          <h2>Controles</h2>
-+          <ul>
-+            <li>Pressione <strong>espaço</strong> ou <strong>seta para cima</strong> para saltar.</li>
-+            <li>No celular, toque no painel para impulsionar o voo.</li>
-+            <li>Desvie dos totens neon para somar pontos infinitos.</li>
-+          </ul>
-+        </div>
-+      </section>
-+      <section class="stage">
-+        <div class="screen">
-+          <canvas
-+            id="game"
-+            width="256"
-+            height="144"
-+            role="img"
-+            aria-label="Cena do jogo Duck Dash"
-+          ></canvas>
-+          <div class="scanlines" aria-hidden="true"></div>
-+        </div>
-+      </section>
-+    </main>
-+    <script src="game.js"></script>
-+  </body>
-+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duck Dash 8-bit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="info-card">
+        <header class="title-card">
+          <p class="subtitle">8-bit flight</p>
+          <h1>Duck Dash</h1>
+        </header>
+        <p class="tagline">Guie o pato azul de bico dourado através dos campos neon. Pule no momento certo e conquiste recordes!</p>
+        <button id="start-btn" type="button">PRESS START</button>
+        <div class="hud pixel-panel">
+          <p><span class="label">Pontuação</span><span id="score" class="value">0</span></p>
+          <p><span class="label">Recorde</span><span id="high-score" class="value">0</span></p>
+        </div>
+        <div class="tips pixel-panel">
+          <h2>Controles</h2>
+          <ul>
+            <li>Pressione <strong>espaço</strong> ou <strong>seta para cima</strong> para saltar.</li>
+            <li>No celular, toque no painel para impulsionar o voo.</li>
+            <li>Desvie dos totens neon para somar pontos infinitos.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="stage">
+        <div class="screen">
+          <canvas
+            id="game"
+            width="256"
+            height="144"
+            role="img"
+            aria-label="Cena do jogo Duck Dash"
+          ></canvas>
+          <div class="scanlines" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
